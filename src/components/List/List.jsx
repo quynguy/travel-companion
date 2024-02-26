@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = () => {
+const List = () => {
     return (
         <h1> List </h1>
     );

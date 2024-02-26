@@ -4,22 +4,11 @@ import PlaceDetails from '../PlaceDetails/PlaceDetails';
 
 
 import useStyles from './styles';
-const List = () => {
+const List = ({ places }) => {
     const classes = useStyles();
     const {type, setType} = useState('restaurants');
     const {rating, setRating} = useState('');
 
-    const places = [
-        { name: 'Olive Garden' },
-        { name: 'WingStop' },
-        { name: 'Cheddars' },
-        { name: 'Red Lobster' },
-        { name: 'The Cheesecake Factory' },
-        { name: 'Wynn Las Vegas' },
-        { name: 'Disneyland Resort' },
-        { name: 'Hilton Hotels & Resorts' },
-        { name: 'Holiday Inn' },
-    ]
 
     return (
         <div className={classes.container}>

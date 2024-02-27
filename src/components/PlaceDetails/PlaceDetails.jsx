@@ -5,9 +5,11 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import Rating from '@material-ui/lab/Rating';
 
-import useStyles from './styles'
+import useStyles from './places-styles'
 
-const PlaceDetails = ( { place }) => {
+const PlaceDetails = ( { place, selected, refProp }) => {
+    if(selected) refProp?.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+
     const classes = useStyles();
 
     return (
